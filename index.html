@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Качественный и быстрый ремонт грузовых и легковых автомобилей с гарантией. Автосервис ЭкспоКар в Бресте.">
+    <title>ЭкспоКар - Ремонт грузовых и легковых автомобилей</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+<header class="header">
+    <div class="container">
+        <div class="header__grid">
+            <!-- Логотип -->
+            <div class="header__logo">
+                <a href="/" class="logo">
+                    <img src="img/logo.png" alt="ЭкспоКар - автосервис" class="logo__image">
+                    <span class="logo__text visually-hidden">ЭкспоКар</span>
+                </a>
+            </div>
+            
+            <!-- Основная навигация -->
+            <nav class="header__nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#main" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Контактная информация -->
+            <div class="header__contacts">
+                <address class="contacts__address">
+                    г. Брест, ул. Лейтенанта Рябцева, дом 124, оф. 25
+                </address>
+                <a href="tel:+375297917403" class="contacts__phone">
+                    +375 (29) 791-74-03
+                </a>
+            </div>
+            
+            <!-- Кнопка меню для мобильных устройств -->
+            <button class="header__menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+    <!-- Черная плашка с текстом АВТОСЕРВИС -->
+    <section class="section-header">
+        <h2 class="main-title">АВТОСЕРВИС</h2>
+        <div class="ellipse"></div>
+        <img class="arrow" src="img/Arrow 1.png" alt="" />
+    </section>
+    
+    <!-- Серая плашка с машинами -->
+    <section class="image">
+        <h2 class="promo-header">
+            <span class="text-wrapper">Р</span><span class="span">ЕМОНТ ГРУЗОВЫХ</span>
+        </h2>
+        <div class="promo-subheader">И ЛЕГКОВЫХ АВТОМОБИЛЕЙ</div>
+        <p class="promo-description">Качественный и быстрый ремонт с гарантией!</p>
+        
+        <img class="truck-image" src="img/truck.png" alt="Грузовой автомобиль" />
+        <img class="car-image" src="img/car.png" alt="Легковой автомобиль" />
+        
+        <div class="contact-info">
+            <div class="contact-label">Телефон для записи:</div>
+            <p class="contact-number">
+                <a href="tel:+375297917403">+375 (29) - 791 - 74 - 03</a>
+            </p>
+        </div>
+    </section>
+
+        <!-- Секция услуг -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="services-container">
+                <!-- Заголовок секции -->
+                <h2 class="section-title">
+                    <span class="text-wrapper">У</span><span class="text-wrapper-2">слуги автосервиса</span>
+                </h2>
+                <p class="section-description">
+                    Автосервис предоставляет большой спектр услуг, основные из которых представлены ниже
+                </p>
+                
+                <!-- Сетка карточек услуг -->
+                <div class="services-grid">
+                    <!-- Карточка 1 -->
+                    <article class="service-card">
+                        <div class="service-image-container">
+                            <img src="img/1.png" alt="Комплексная диагностика" class="service-image">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Комплексная диагностика</h3>
+                        </div>
+                    </article>
+                    
+                    <!-- Карточка 2 -->
+                    <article class="service-card">
+                        <div class="service-image-container">
+                            <img src="img/2.png" alt="Ремонт подвески и рулевого управления" class="service-image">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Ремонт подвески и рулевого управления</h3>
+                        </div>
+                    </article>
+                    
+                    <!-- Карточка 3 -->
+                    <article class="service-card">
+                        <div class="service-image-container">
+                            <img src="img/33.png" alt="Замена ремней ГРМ" class="service-image">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Замена ремней ГРМ</h3>
+                        </div>
+                    </article>
+                    
+                    <!-- Карточка 4 -->
+                    <article class="service-card">
+                        <div class="service-image-container">
+                            <img src="img/3.png" alt="Замена сцепления" class="service-image">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Замена сцепления</h3>
+                        </div>
+                    </article>
+                    
+                    <!-- Карточка 5 -->
+                    <article class="service-card">
+                        <div class="service-image-container">
+                            <img src="img/5.png" alt="Ремонт тормозной системы" class="service-image">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Ремонт тормозной системы и суппортов</h3>
+                        </div>
+                    </article>
+                    
+                    <!-- Карточка 6 -->
+                    <article class="service-card">
+                        <div class="service-image-container">
+                            <img src="img/6.png" alt="Сварочный ремонт" class="service-image">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Сварочный ремонт</h3>
+                        </div>
+                    </article>
+                    
+                    <!-- Карточка 7 -->
+                    <article class="service-card">
+                        <div class="service-image-container">
+                            <img src="img/7.png" alt="Замена масла и фильтров" class="service-image">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Замена масла и фильтров</h3>
+                        </div>
+                    </article>
+                    
+                    <!-- Карточка 8 -->
+                    <article class="service-card">
+                        <div class="service-image-container">
+                            <img src="img/8.png" alt="Мелкосрочный ремонт" class="service-image">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Мелкосрочный ремонт</h3>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Контактная плашка -->
+                <div class="services-contact-info">
+                    <div class="contact-label-2">Номер для записи</div>
+                    <p class="contact-number-3">
+                        <a href="tel:+375297917403">+375 (29) - 791 - 74 - 03</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Секция "Помощь с подбором автозапчастей" -->
+<section class="parts-help-section">
+    <div class="container">
+        <div class="parts-help-content">
+            <!-- Черная плашка с текстом СТОБРЕСТ -->
+            <div class="section-header-2">
+                <h2 class="main-header">СТОБРЕСТ</h2>
+                <div class="ellipse-3"></div>
+                <img class="arrow-2" src="img/Arrow 1.png" alt="" />
+            </div>
+            
+            <!-- Основной контент секции -->
+            <div class="parts-help-main">
+                <div class="parts-help-header">ПОМОЩЬ С ПОДБОРОМ</div>
+                <div class="parts-help-subheader">АВТОЗАПЧАСТЕЙ</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Секция "Как мы работаем" -->
+<section class="how-we-work-section" id="about">
+    <div class="how-we-work-wrapper">
+        <div class="how-we-work-content">
+            <div class="section-subtitle">Почему стоит выбирать нас?</div>
+            <h2 class="section-title">
+                <span class="text-wrapper">К</span><span class="text-wrapper-2">ак мы работаем?</span>
+            </h2>
+            
+            <div class="work-process">
+                <div class="work-step">
+                    <article class="step-details">
+                        <div class="step-header">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">ЗАЯВКА</h3>
+                        </div>
+                        <p class="step-description">Оставьте нам заявку по телефону на нашем сайте</p>
+                    </article>
+                    
+                    <article class="step-details">
+                        <div class="step-header step-header-2">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">ЗАПИСЬ</h3>
+                        </div>
+                        <p class="step-description p">
+                            Даем консультацию и определяем дату и время ремонта вашего автомобиля, а также конечную стоимость работ
+                        </p>
+                    </article>
+                    
+                    <article class="step-details">
+                        <div class="step-header step-header-3">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">РЕМОНТ</h3>
+                        </div>
+                        <p class="step-description step-description-2">
+                            Осуществляем ремонт и профилактику, диагностику автомобиля в нашем автосервисе
+                        </p>
+                    </article>
+                    
+                    <article class="step-details step-details-2">
+                        <div class="step-header step-header-4">
+                            <div class="step-number">04</div>
+                            <h3 class="step-title">ПРОВЕРКА И ОПЛАТА</h3>
+                        </div>
+                        <p class="step-description">Мастер сообщает о работе, клиент проверяет автомобиль и оплачивает ремонт</p>
+                    </article>
+                </div>
+            </div>
+            
+            <div class="work-image">
+                <img src="https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-12-01/xUVnpQLOmu.png" 
+                     alt="Процесс работы в автосервисе" 
+                     class="process-image">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Секция "Сильные стороны" - ПРОСТАЯ ВЕРСИЯ -->
+<section class="strengths-section">
+    <div class="strengths-container">
+        <!-- Заголовок и подзаголовок вынесены за пределы белой плашки -->
+        <h2 class="strengths-title">
+            <span class="accent-text">С</span>ильные стороны автосервиса
+        </h2>
+        <p class="strengths-subtitle">Почему стоит выбирать нас?</p>
+
+        <!-- КОЛЕСО НА ФОНЕ -->
+        <div class="wheel-bg">
+            <img src="img/wheel.png" alt="Колесо">
+        </div>
+
+        <!-- Белая плашка только для преимуществ -->
+        <div class="strengths-card">
+            <div class="strengths-items">
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <img src="img/repair-mechanism-svgrepo-com 1.png" alt="Качественные материалы">
+                    </div>
+                    <p>Только качественные материалы</p>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <img src="img/repair-wrenches-svgrepo-com 1.png" alt="Гарантия">
+                    </div>
+                    <p>Гарантия на все выполненные работы</p>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <img src="img/mechanic-garage-svgrepo-com 1.png" alt="Опытные механики">
+                    </div>
+                    <p>Опытные механики, сертификаты</p>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <img src="img/wheel-repair-svgrepo-com 1.png" alt="Выполнение в срок">
+                    </div>
+                    <p>Выполнение работ точно в срок</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ФИОЛЕТОВАЯ ПЛАШКА С КЛИЕНТАМИ -->
+    <div class="client-stats">
+        <div class="client-content">
+            <p class="client-number">
+                <span class="client-text">Более</span>
+                <span class="client-count">180</span>
+            </p>
+            <p class="client-description">довольных клиентов</p>
+        </div>
+    </div>
+</section>
+<!-- Адаптивная карта Google Maps -->
+<section class="map-section">
+    <div class="map-container">
+        <!-- Google Maps iframe -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.8913861845365!2d23.69492547683746!3d52.09505405779399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bbd56b5f7db%3A0x9640c3d4558029ea!2z0JvQtdC90LjQvdGB0LrQuNC5INGA0LXQutC70LDQvNCwINCg0LDRhtC10LLQvtC5LCAxMjQsINCT0YDQtdGB0YI!5e0!3m2!1sru!2sby!4v1700000000000!5m2!1sru!2sby" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Карта автосервиса ЭкспоКар">
+        </iframe>
+        
+        <!-- Фиолетовая метка -->
+        <div class="purple-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-pulse"></div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Логотип как в хедере -->
+        <div class="footer-logo">
+            <a href="/" class="logo">
+                <img src="img/logo.png" alt="ЭкспоКар - автосервис" class="logo__image">
+                <span class="logo__text visually-hidden">ЭкспоКар</span>
+            </a>
+        </div>
+
+        <!-- Навигация -->
+        <nav class="footer-nav">
+            <ul class="nav-list">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Контакты -->
+        <div class="footer-contacts">
+            <address class="footer-address">
+                г. Брест, ул. Лейтенанта Рябцева, дом 124, оф. 25
+            </address>
+            <a href="tel:+375297917403" class="footer-phone">
+                +375 (29) - 791 - 74 - 03
+            </a>
+        </div>
+    </div>
+
+    <!-- Нижняя часть БЕЗ полоски -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="copyright">
+                <span class="copyright-accent">Copyright 2024</span>
+                <span class="copyright-text"> © Все права защищены</span>
+            </div>
+            <div class="developers">
+                <span class="dev-text">Создание и продвижение сайтов </span>
+                <span class="dev-name">INTERNET</span>
+                <span class="dev-accent">SOZDATELI</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.header__menu-toggle');
+    const nav = document.querySelector('.header__nav');
+    const contacts = document.querySelector('.header__contacts');
+    const body = document.body;
+    
+    menuToggle.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        
+        // Переключаем состояния
+        this.classList.toggle('active');
+        nav.classList.toggle('active');
+        contacts.classList.toggle('active');
+        body.classList.toggle('menu-open');
+        this.setAttribute('aria-expanded', !isExpanded);
+        
+        // Меняем текст для скринридеров
+        const label = isExpanded ? 'Открыть меню' : 'Закрыть меню';
+        this.setAttribute('aria-label', label);
+    });
+    
+    // Закрываем меню при клике на ссылку (для мобильных)
+    document.querySelectorAll('.nav__link, .footer-nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 1024) {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+                contacts.classList.remove('active');
+                body.classList.remove('menu-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Открыть меню');
+            }
+        });
+    });
+    
+    // Закрываем меню при изменении размера окна
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 1024) {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+            contacts.classList.remove('active');
+            body.classList.remove('menu-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', 'Открыть меню');
+        }
+    });
+    
+    // Закрываем меню при клике вне его
+    document.addEventListener('click', function(event) {
+        if (window.innerWidth <= 1024) {
+            const isClickInsideMenu = nav.contains(event.target) || 
+                                     contacts.contains(event.target) || 
+                                     menuToggle.contains(event.target);
+            
+            if (!isClickInsideMenu && nav.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+                contacts.classList.remove('active');
+                body.classList.remove('menu-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Открыть меню');
+            }
+        }
+    });
+});
+</script>
+<script>
+// JavaScript с правильным подсчетом
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // 1. Анимация подсчета 180 клиентов - правильная версия
+    function startCounter() {
+        const counterElement = document.querySelector('.client-count');
+        if (!counterElement) return;
+        
+        // Запускаем только на десктопе
+        if (window.innerWidth > 768) {
+            let count = 0;
+            const target = 180;
+            const duration = 2000; // 2 секунды
+            const step = target / (duration / 16.67); // Для 60fps
+            
+            // Ждем пока секция будет видна
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    const startTime = Date.now();
+                    
+                    function updateCounter() {
+                        const elapsed = Date.now() - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        
+                        count = Math.floor(progress * target);
+                        counterElement.textContent = count;
+                        
+                        if (progress < 1) {
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counterElement.textContent = target;
+                        }
+                    }
+                    
+                    // Ждем немного перед стартом
+                    setTimeout(updateCounter, 500);
+                    
+                    // Отключаем observer
+                    observer.disconnect();
+                }
+            }, { threshold: 0.5 });
+            
+            observer.observe(document.querySelector('.strengths-section'));
+        }
+    }
+    
+    // 2. Появление секций при скролле
+    function showSections() {
+        const sections = document.querySelectorAll(
+            '.services-section, .parts-help-section, .how-we-work-section, .strengths-section'
+        );
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        sections.forEach(section => observer.observe(section));
+    }
+    
+    showSections();
+    
+    // 3. Кнопка "Наверх"
+    const scrollBtn = document.createElement('button');
+    scrollBtn.className = 'scroll-to-top';
+    scrollBtn.innerHTML = '↑';
+    scrollBtn.setAttribute('aria-label', 'Наверх');
+    document.body.appendChild(scrollBtn);
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            scrollBtn.classList.add('show');
+            document.querySelector('.header').classList.add('scrolled');
+        } else {
+            scrollBtn.classList.remove('show');
+            document.querySelector('.header').classList.remove('scrolled');
+        }
+    });
+    
+    scrollBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    // 4. Плавная прокрутка для якорных ссылок
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href !== '#') {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    window.scrollTo({
+                        top: target.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // 5. Мобильное меню
+    const menuToggle = document.querySelector('.header__menu-toggle');
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.header__nav').classList.toggle('active');
+            document.querySelector('.header__contacts').classList.toggle('active');
+        });
+    }
+    
+    // 6. Запускаем счетчик при загрузке если уже видно
+    setTimeout(() => {
+        const strengthsSection = document.querySelector('.strengths-section');
+        if (strengthsSection) {
+            const rect = strengthsSection.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                startCounter();
+            }
+        }
+    }, 100);
+    
+    // 7. Также запускаем при скролле
+    window.addEventListener('scroll', function() {
+        const strengthsSection = document.querySelector('.strengths-section');
+        if (strengthsSection && !strengthsSection.dataset.counterStarted) {
+            const rect = strengthsSection.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.8) {
+                strengthsSection.dataset.counterStarted = 'true';
+                startCounter();
+            }
+        }
+    });
+});
+</script>
+</html>
