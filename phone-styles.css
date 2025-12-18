@@ -1,0 +1,1287 @@
+/* mobile-styles.css - МОБИЛЬНАЯ ВЕРСИЯ КАК ПЛАНШЕТНАЯ */
+/* Точка перелома: 480px */
+
+@media screen and (max-width: 480px) {
+  /* ==================== БАЗОВЫЕ НАСТРОЙКИ ==================== */
+  html, body {
+    font-size: 14px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 4%;
+    box-sizing: border-box;
+  }
+  
+  /* ==================== БАННЕР (как на планшете, но меньше) ==================== */
+  .section-header {
+    height: 450px;
+    margin-top: 150px;
+  }
+  
+  .main-title {
+    top: 70%;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    word-break: break-word;
+  }
+  
+  /* Принудительный перенос для маленьких экранов */
+  @media screen and (max-width: 380px) {
+    .main-title {
+      white-space: normal;
+      font-size: 3rem;
+    }
+  }
+  
+  .ellipse {
+    width: 50px;
+    height: 50px;
+    top: 69%;
+  }
+
+  .arrow {
+    top: 75%;
+  }
+  
+  .image {
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    height: 420px;
+    padding-top: 50px;
+    border-radius: 40px;
+  }
+  
+  .promo-header {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin: 0 auto 15px;
+    word-break: break-word;
+    font-weight: 700;
+  }
+  
+  .promo-subheader {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin: 0 auto 15px;
+    font-weight: 700;
+    
+  }
+  
+  .promo-description {
+    width: 65%;
+    max-width: 250px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin: 10px auto 40px;
+  }
+  
+  .truck-image {
+    top: 40%;
+    left: -1%;
+    width: 45%;
+  }
+  
+.car-image {
+  right: 0;
+  width: 45%;
+  height: auto;
+  object-fit: contain;
+  object-position: right center;
+  top: 45%;
+}
+  
+  /* КОНТАКТНАЯ ПЛАШКА */
+  .contact-info {
+    bottom: -60px;
+    width: 75%;
+    max-width: 380px;
+    min-height: 120px;
+    padding: 20px 15px;
+    border-radius: 61px 61px 0 0;
+  }
+  
+  .contact-label {
+    font-size: 1rem;
+   margin-bottom: clamp(8px, 2vh, 12px);
+  }
+  
+  .contact-number {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+  }
+  
+  /* ==================== УСЛУГИ (2 КОЛОНКИ как на планшете) ==================== */
+  .services-section {
+    padding: 40px 0 30px;
+  }
+  
+  .services-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .service-card {
+    width: 100%;
+    height: 285px;
+    border-radius: 12px;
+  }
+  
+  .service-image-container {
+    height: 184px;
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+    padding: 8px 5px;
+  }
+  
+  /* ==================== ЗАПЧАСТИ И ПОМОЩЬ ==================== */
+  .parts-help-section {
+    padding: 40px 0 30px;
+    margin-top: 40px;
+  }
+  
+  .parts-help-header {
+    font-size: 2.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .parts-help-subheader {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+  
+  /* ==================== КАК МЫ РАБОТАЕМ ==================== */
+  .how-we-work-section {
+    padding: 50px 0 60px;
+    margin-top: 30px;
+  }
+  
+  .section-title {
+    font-size: 2.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .work-process {
+    min-height: 500px;
+    width: 100%;
+    margin: 120px auto 20px;
+  }
+  
+  .work-step {
+    gap: 25px;
+    margin: 25px auto 0;
+  }
+  
+  .step-details {
+    min-height: 70px;
+    gap: 8px;
+  }
+  
+  .step-number {
+    font-size: 1.5rem;
+    min-width: 35px;
+  }
+  
+  .step-title {
+    font-size: 1.3rem;
+  }
+  
+  .step-description {
+    font-size: 1.1rem;
+  }
+  
+  .work-image {
+    height: 315px;
+    margin: -60px auto 25px;
+  }
+  
+  /* mobile-styles.css - Исправленная секция "Сильные стороны" */
+
+
+/* ==================== СИЛЬНЫЕ СТОРОНЫ - ИСПРАВЛЕННАЯ ВЕРСИЯ ==================== */
+.strengths-section {
+  padding: 60px 0 20px;
+  min-height: 500px;
+  position: relative;
+  overflow: visible;
+}
+
+/* Колесо - добавляем, прячем за белой плашкой */
+.wheel-bg {
+  display: block !important;
+  position: absolute;
+  left: -120px;
+  top: 100px;
+  width: 400px;
+  height: 400px;
+  z-index: 3;
+}
+
+.wheel-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* УБИРАЕМ ОТДЕЛЬНЫЙ БЛОК ЗАГОЛОВКОВ - они теперь внутри белой плашки */
+.strengths-header {
+  display: none !important;
+}
+
+/* Белая плашка - С ЗАГОЛОВКАМИ ВНУТРИ и сдвинута левее */
+.strengths-card {
+  position: relative !important;
+  width: 88% !important; /* Уменьшили ширину для отступа справа */
+  max-width: 330px !important;
+  height: auto !important;
+  min-height: 440px !important; /* Уменьшили высоту еще */
+  padding: 15px 20px 20px 20px !important; /* Уменьшили padding сверху, увеличили снизу */
+  margin: 0 0 0 -7% !important; /* Сдвинули еще левее */
+  border-radius: 20px !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  z-index: 5;
+  background: white;
+}
+
+/* Показываем заголовки внутри белой плашки с минимальными отступами */
+.strengths-card .strengths-header {
+  display: block !important;
+  position: relative !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  text-align: center;
+  padding: 0 !important;
+  margin: 0 0 5px 0 !important; /* Уменьшили до минимума */
+  z-index: 10 !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}
+
+/* ЗАГОЛОВКИ ВНУТРИ БЕЛОЙ ПЛАШКИ с минимальными отступами */
+.strengths-title {
+  font-family: 'Jost', sans-serif !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+  font-size: 1.8rem !important;
+  line-height: 1.1 !important; /* Уменьшили межстрочный интервал */
+  letter-spacing: 0 !important;
+  margin: 0 0 4px !important; /* Минимальный отступ */
+  text-align: center !important;
+  width: 100% !important;
+  display: block !important;
+  padding: 0 !important;
+}
+
+.strengths-title .accent-text {
+  color: #922fe8 !important;
+}
+
+.strengths-subtitle {
+  font-family: 'Jost', sans-serif !important;
+  font-weight: 300 !important;
+  color: #333 !important;
+  font-size: 1rem !important; /* Немного уменьшили */
+  line-height: 1.1 !important; /* Уменьшили межстрочный интервал */
+  letter-spacing: 0 !important;
+  margin: 0 0 12px !important; /* Уменьшили отступ до преимуществ */
+  text-align: center !important;
+  display: block !important;
+  padding: 0 !important;
+}
+
+/* Контейнер для преимуществ внутри белой плашки с меньшими отступами */
+.strengths-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* Еще немного уменьшили */
+  width: 100%;
+  height: 100%;
+  margin-top: 0 !important; /* Убрали возможный отступ сверху */
+}
+
+/* Элемент преимущества - иконка и текст на одном уровне */
+.strength-item {
+  display: flex;
+  align-items: flex-start; /* Выровняли по верху для многострочного текста */
+  gap: 12px;
+  width: 100% !important;
+  min-height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Иконка */
+.strength-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px; /* Немного сместили вниз для выравнивания */
+}
+
+.strength-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* Текст преимущества */
+.strength-item p {
+  font-size: 1.05rem !important; /* Немного уменьшили */
+  font-weight: 400 !important;
+  color: #333 !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+  flex: 1;
+  text-align: left !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Фиолетовая плашка с клиентами - ПОНИЖЕ */
+.client-stats {
+  position: absolute !important;
+  top: 480px !important;
+  left: 55% !important;
+  transform: translateX(-50%) !important;
+  width: 40% !important;
+  max-width: 250px !important;
+  height: 140px !important;
+  background: #4C1B79 !important;
+  padding: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin: 0 !important;
+  z-index: 10 !important;
+  box-sizing: border-box !important;
+}
+
+/* Контент в фиолетовой плашке - по центру */
+.client-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-number {
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.client-text {
+  display: block;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.client-count {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.client-description {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: white;
+  margin: 0;
+  max-width: 160px;
+  word-break: break-word;
+  text-align: center;
+}
+
+
+
+  
+  
+  /* ==================== ФУТЕР ==================== */
+  .footer {
+    padding: 30px 0 15px;
+  }
+  
+  .footer-logo .logo__image {
+    width: 200px;
+  }
+  
+  .nav-list {
+    gap: 50px;
+  }
+  
+  .nav-list a {
+    font-size: 0.95rem;
+  }
+  
+  .footer-phone {
+    font-size: 1.5rem;
+  }
+
+
+/* Дополнительно для очень маленьких экранов */
+@media screen and (max-width: 360px) {
+  .services-grid {
+    gap: 8px;
+  }
+  
+  .service-card {
+    height: 150px;
+  }
+  
+  .service-image-container {
+    height: 90px;
+  }
+}
+}
+
+/* Уменьшаем бургер-кнопку */
+  .header__menu-toggle {
+    width: 28px !important;
+    height: 20px !important;
+  }
+  
+  .header__menu-toggle span {
+    height: 2px !important;
+  }
+  
+  .header__menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px) !important;
+  }
+  
+  .header__menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px) !important;
+  }
+  
+  /* Уменьшаем саму панель меню */
+  .mobile-menu {
+    width: 320px !important; /* Уменьшили ширину с 480px */
+    right: -320px !important; /* Соответственно смещаем */
+    border-radius: 15px 0 0 15px !important; /* Закругляем только левые углы */
+    padding: 80px 20px 40px !important; /* Уменьшили отступы */
+  }
+  
+  /* Уменьшаем крестик закрытия */
+  .mobile-menu-close {
+    top: 20px !important;
+    right: 20px !important;
+    width: 28px !important;
+    height: 28px !important;
+  }
+  
+  .mobile-menu-close::before,
+  .mobile-menu-close::after {
+    width: 20px !important;
+    height: 2px !important;
+  }
+  
+  /* Уменьшаем навигацию */
+  .mobile-nav {
+    margin-top: 30px;
+    gap: 20px !important; /* Меньше отступы между пунктами */
+    margin-bottom: 30px !important;
+  }
+  
+  .nav-item {
+    font-size: 18px !important; /* Уменьшили шрифт */
+    padding: 10px 0 !important;
+    transform: translateX(20px) !important; /* Меньшее начальное смещение */
+  }
+  
+  .mobile-menu.active .nav-item:nth-child(1) {
+    transition: all 0.4s ease 0.1s !important;
+  }
+  
+  .mobile-menu.active .nav-item:nth-child(2) {
+    transition: all 0.4s ease 0.15s !important;
+  }
+  
+  .mobile-menu.active .nav-item:nth-child(3) {
+    transition: all 0.4s ease 0.2s !important;
+  }
+  
+  .mobile-menu.active .nav-item:nth-child(4) {
+    transition: all 0.4s ease 0.25s !important;
+  }
+  
+  /* Уменьшаем контактную информацию */
+  .mobile-contacts {
+    padding-top: 30px !important;
+  }
+  
+  .mobile-address {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 15px !important;
+    inset-inline: auto;
+  }
+  
+  .mobile-phone {
+    font-size: 21px !important; /* Уменьшили телефон */
+    line-height: 1.2 !important;
+  }
+  
+  /* Адаптация оверлея */
+  .menu-overlay.active {
+    backdrop-filter: blur(2px) !important; /* Меньше размытие */
+  }
+
+
+/* Для очень маленьких телефонов (до 360px) */
+@media screen and (max-width: 360px) {
+  .mobile-menu {
+    width: 280px !important;
+    right: -280px !important;
+    padding: 70px 15px 30px !important;
+  }
+  
+  .mobile-nav {
+    gap: 15px !important;
+  }
+  
+  .nav-item {
+    font-size: 16px !important;
+    padding: 8px 0 !important;
+  }
+  
+  .mobile-phone {
+    font-size: 20px !important;
+  }
+  
+  .mobile-address {
+    font-size: 13px !important;
+  }
+  
+  .header__menu-toggle {
+    width: 24px !important;
+    height: 18px !important;
+  }
+  
+  .header__menu-toggle span {
+    height: 1.5px !important;
+  }
+}
+
+
+/* mobile-styles.css - МОБИЛЬНАЯ ВЕРСИЯ КАК ПЛАНШЕТНАЯ */
+/* Точка перелома: 480px */
+
+@media screen and (max-width: 480px) {
+  /* ==================== БАЗОВЫЕ НАСТРОЙКИ ==================== */
+  html, body {
+    font-size: 14px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 4%;
+    box-sizing: border-box;
+  }
+  
+  /* ==================== БАННЕР (как на планшете, но меньше) ==================== */
+  .section-header {
+    height: 450px;
+    margin-top: 150px;
+  }
+  
+  .main-title {
+    top: 55%;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    word-break: break-word;
+  }
+  
+  /* Принудительный перенос для маленьких экранов */
+  @media screen and (max-width: 380px) {
+    .main-title {
+      white-space: normal;
+      font-size: 3rem;
+    }
+  }
+  
+  /* ПЕРВЫЙ КРУГ - УМЕНЬШАЕМ КАК ВТОРОЙ */
+  .ellipse {
+    width: 45px !important; /* Уменьшили с 50px до 45px */
+    height: 45px !important;
+    top: 69%;
+  }
+
+  .arrow {
+    top: 75%;
+  }
+  
+  .image {
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    height: 420px;
+    padding-top: 50px;
+    border-radius: 40px;
+  }
+  
+  .promo-header {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin: 0 auto 15px;
+    word-break: break-word;
+    font-weight: 700;
+  }
+  
+  .promo-subheader {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin: 0 auto 15px;
+    font-weight: 700;
+  }
+  
+  .promo-description {
+    width: 65%;
+    max-width: 250px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin: 10px auto 40px;
+  }
+  
+  .truck-image {
+    top: 40%;
+    left: -1%;
+    width: 45%;
+  }
+  
+  .car-image {
+    right: 0;
+    width: 45%;
+    height: auto;
+    object-fit: contain;
+    object-position: right center;
+    top: 45%;
+  }
+  
+  /* КОНТАКТНАЯ ПЛАШКА */
+  .contact-info {
+    bottom: -60px;
+    width: 75%;
+    max-width: 380px;
+    min-height: 120px;
+    padding: 20px 15px;
+    border-radius: 61px 61px 0 0;
+  }
+  
+  .contact-label {
+    font-size: 1rem;
+    margin-bottom: clamp(8px, 2vh, 12px);
+  }
+  
+  .contact-number {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+  }
+  
+  /* ==================== УСЛУГИ (2 КОЛОНКИ как на планшете) ==================== */
+  .services-section {
+    padding: 40px 0 30px;
+  }
+  
+  .services-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .service-card {
+    width: 100%;
+    height: 285px;
+    border-radius: 12px;
+  }
+  
+  .service-image-container {
+    height: 184px;
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+    padding: 8px 5px;
+  }
+  
+  /* ==================== ЗАПЧАСТИ И ПОМОЩЬ ==================== */
+  .parts-help-section {
+    padding: 40px 0 30px;
+    margin-top: 40px;
+  }
+  
+  .parts-help-header {
+    font-size: 2.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .parts-help-subheader {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+
+  .main-header {
+    font-size: clamp(10rem, 50vw, 25rem);
+    position: absolute;
+    top: 50%;
+    left: 43% !important; /* Сдвигаем вправо - было 45% */
+    transform: translate(-50%, -50%) !important;
+    opacity: 0.08;
+    color: white;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* ==================== КАК МЫ РАБОТАЕМ ==================== */
+  .how-we-work-section {
+    padding: 50px 0 60px;
+    margin-top: 30px;
+  }
+  
+  .section-title {
+    font-size: 2.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .work-process {
+    min-height: 500px;
+    width: 100%;
+    margin: 120px auto 20px;
+  }
+  
+  .work-step {
+    gap: 25px;
+    margin: 25px auto 0;
+  }
+  
+  .step-details {
+    min-height: 70px;
+    gap: 1px;
+  }
+  
+  .step-number {
+    font-size: 1.5rem;
+    min-width: 35px;
+  }
+  
+  .step-title {
+    font-size: 1.3rem;
+  }
+  
+  .step-description {
+    font-size: 1.1rem;
+  }
+  
+  .work-image {
+    height: 315px;
+    margin: -60px auto 25px;
+  }
+  
+  /* ==================== СИЛЬНЫЕ СТОРОНЫ ==================== */
+  .strengths-section {
+    padding: 20px 0 20px;
+    min-height: 500px;
+    position: relative;
+    overflow: visible;
+  }
+
+  .wheel-bg {
+    display: block !important;
+    position: absolute;
+    left: -120px;
+    top: 200px;
+    width: 400px;
+    height: 400px;
+    z-index: 3;
+  }
+
+  .wheel-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .strengths-header {
+    display: none !important;
+  }
+
+  .strengths-card {
+    position: relative !important;
+    width: 88% !important;
+    max-width: 330px !important;
+    height: auto !important;
+    min-height: 440px !important;
+    padding: 15px 20px 20px 20px !important;
+    margin: 0 0 0 -7% !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    z-index: 5;
+    background: white;
+  }
+
+  .strengths-card .strengths-header {
+    display: block !important;
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 0 5px 0 !important;
+    z-index: 10 !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .strengths-title {
+    font-family: 'Jost', sans-serif !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    font-size: 1.8rem !important;
+    line-height: 1.1 !important;
+    letter-spacing: 0 !important;
+    margin: 0 0 4px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    padding: 0 !important;
+  }
+
+  .strengths-title .accent-text {
+    color: #922fe8 !important;
+  }
+
+  .strengths-subtitle {
+    font-family: 'Jost', sans-serif !important;
+    font-weight: 300 !important;
+    color: #333 !important;
+    font-size: 1rem !important;
+    line-height: 1.1 !important;
+    letter-spacing: 0 !important;
+    margin: 0 0 12px !important;
+    text-align: center !important;
+    display: block !important;
+    padding: 0 !important;
+  }
+
+  .strengths-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    height: 100%;
+    margin-top: 0 !important;
+  }
+
+  .strength-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100% !important;
+    min-height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .strength-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .strength-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+
+  .strength-item p {
+    font-size: 1.05rem !important;
+    font-weight: 400 !important;
+    color: #333 !important;
+    line-height: 1.25 !important;
+    margin: 0 !important;
+    flex: 1;
+    text-align: left !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .client-stats {
+    position: absolute !important;
+    top: 490px !important;
+    left: 55% !important;
+    transform: translateX(-50%) !important;
+    width: 40% !important;
+    max-width: 200px !important;
+    height: 120px !important;
+    background: #4C1B79 !important;
+    padding: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 !important;
+    z-index: 10 !important;
+    box-sizing: border-box !important;
+  }
+
+  .client-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .client-number {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .client-text {
+    display: block;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+
+  .client-count {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .client-description {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    color: white;
+    margin: 0;
+    max-width: 160px;
+    word-break: break-word;
+    text-align: center;
+  }
+  
+  /* ==================== ФУТЕР ==================== */
+  .footer {
+    padding: 30px 0 15px;
+  }
+  
+  .footer-logo .logo__image {
+    width: 200px;
+  }
+  
+  .nav-list {
+    gap: 50px;
+  }
+  
+  .nav-list a {
+    font-size: 0.95rem;
+  }
+  
+  .footer-phone {
+    font-size: 1.5rem;
+  }
+  
+  /* ==================== МОБИЛЬНОЕ МЕНЮ (ВНУТРИ МЕДИА-ЗАПРОСА) ==================== */
+  .header__menu-toggle {
+    width: 28px !important;
+    height: 20px !important;
+  }
+  
+  .header__menu-toggle span {
+    height: 2px !important;
+  }
+  
+  .header__menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px) !important;
+  }
+  
+  .header__menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px) !important;
+  }
+  
+  .mobile-menu {
+    width: 320px !important;
+    right: -320px !important;
+    border-radius: 15px 0 0 15px !important;
+    padding: 80px 20px 40px !important;
+  }
+  
+  .mobile-menu-close {
+    top: 20px !important;
+    right: 20px !important;
+    width: 28px !important;
+    height: 28px !important;
+  }
+  
+  .mobile-menu-close::before,
+  .mobile-menu-close::after {
+    width: 20px !important;
+    height: 2px !important;
+  }
+  
+  .mobile-nav {
+    margin-top: 30px;
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .nav-item {
+    font-size: 18px !important;
+    padding: 10px 0 !important;
+    transform: translateX(20px) !important;
+  }
+  
+  .mobile-menu.active .nav-item:nth-child(1) {
+    transition: all 0.4s ease 0.1s !important;
+  }
+  
+  .mobile-menu.active .nav-item:nth-child(2) {
+    transition: all 0.4s ease 0.15s !important;
+  }
+  
+  .mobile-menu.active .nav-item:nth-child(3) {
+    transition: all 0.4s ease 0.2s !important;
+  }
+  
+  .mobile-menu.active .nav-item:nth-child(4) {
+    transition: all 0.4s ease 0.25s !important;
+  }
+  
+  .mobile-contacts {
+    padding-top: 30px !important;
+  }
+  
+  .mobile-address {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 15px !important;
+    inset-inline: auto;
+  }
+  
+  .mobile-phone {
+    font-size: 21px !important;
+    line-height: 1.2 !important;
+  }
+  
+  .menu-overlay.active {
+    backdrop-filter: blur(2px) !important;
+  }
+  
+  /* ==================== ДОПОЛНИТЕЛЬНО ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ ==================== */
+  @media screen and (max-width: 360px) {
+    .services-grid {
+      gap: 8px;
+    }
+    
+    .service-card {
+      height: 150px;
+    }
+    
+    .service-image-container {
+      height: 90px;
+    }
+    
+    /* Еще меньше круги и стрелки на очень маленьких экранах */
+    .ellipse {
+      width: 40px !important;
+      height: 40px !important;
+    }
+    
+    .mobile-menu {
+      width: 280px !important;
+      right: -280px !important;
+      padding: 70px 15px 30px !important;
+    }
+    
+    .mobile-nav {
+      gap: 15px !important;
+    }
+    
+    .nav-item {
+      font-size: 16px !important;
+      padding: 8px 0 !important;
+    }
+    
+    .mobile-phone {
+      font-size: 20px !important;
+    }
+    
+    .mobile-address {
+      font-size: 13px !important;
+    }
+    
+    .header__menu-toggle {
+      width: 24px !important;
+      height: 18px !important;
+    }
+    
+    .header__menu-toggle span {
+      height: 1.5px !important;
+    }
+  }
+}
+
+/* ==================== ОБЩИЙ ФОН ДЛЯ ПЛАНШЕТОВ ==================== */
+@media screen and (max-width: 480px) {
+  body {
+    background-color: #F0F0F0 !important;
+  }
+  
+  /* Убираем белый фон с основных контейнеров, если они перекрывают */
+  .container,
+  .main-container,
+  .page-container {
+    background-color: transparent !important;
+  }
+}
+
+/* ==================== ОСНОВНЫЕ СЕКЦИИ - ПРАВИЛЬНЫЙ ФОН ==================== */
+@media screen and (max-width: 480px) {
+  /* Секция услуг */
+  .services-section {
+    background-color: #F0F0F0 !important;
+  }
+  
+  /* Секция "Как мы работаем" */
+  .how-we-work-section {
+    background-color: #F0F0F0 !important;
+  }
+  
+  /* Секция "Сильные стороны" */
+  .strengths-section {
+    background-color: #F0F0F0 !important;
+  }
+  
+  /* Секция карты (если нужен другой фон) */
+  .map-section {
+    background-color: #F0F0F0 !important;
+  }
+  
+  /* Черные секции оставляем как есть */
+  .section-header {
+    background-color: #1C1C1C !important; /* Баннер */
+  }
+  
+  .parts-help-section {
+    background-color: #1b1b1b !important; /* Секция с автозапчастями */
+  }
+}
+
+/* ==================== МОБИЛЬНЫЕ УСТРОЙСТВА (до 480px) ==================== */
+@media screen and (max-width: 480px) {
+  /* ОБА КРУЖКА - ОДИНАКОВОГО РАЗМЕРА */
+  .ellipse,
+  .ellipse-3 {
+    width: 48px !important; /* Одинаковый размер для обоих кружков */
+    height: 48px !important;
+  }
+  
+  /* ФИКСИРУЕМ ПОЗИЦИИ ДЛЯ ПЕРВОГО КРУЖКА */
+  .ellipse {
+    top: 70%; /* Поднимаем немного выше для мобилок */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* ФИКСИРУЕМ ПОЗИЦИИ ДЛЯ ВТОРОГО КРУЖКА */
+  .ellipse-3 {
+    top: -12%; /* Настраиваем позицию для второго кружка */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* СТРЕЛКИ ТОЖЕ ОДИНАКОВОГО РАЗМЕРА */
+  .arrow,
+  .arrow-2 {
+    height: 48px !important; /* Одинаковый размер стрелок */
+  }
+  
+  /* ПОЗИЦИИ СТРЕЛОК */
+  .arrow {
+    top: 75%; /* Подстраиваем под новый размер кружка */
+  }
+  
+  .arrow-2 {
+    top: -5%; /* Подстраиваем под второй кружок */
+  }
+}
