@@ -1703,17 +1703,18 @@ body.menu-open {
   }
   
   .promo-header {
-    font-size: clamp(3.2rem, 5vw, 4.75rem);
+    font-size: clamp(4.2rem, 5vw, 4.75rem);
     margin-bottom: clamp(10px, 2vw, 2%);
+    width: 100%;
   }
   
   .promo-subheader {
-    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    font-size: clamp(1.9rem, 3.5vw, 2.5rem);
     margin-bottom: clamp(10px, 2vw, 2%);
   }
   
   .promo-description {
-    font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+    font-size: clamp(1.6rem, 2.2vw, 1.8rem);
     margin: clamp(8px, 1.5vw, 10%) auto clamp(30px, 5vw, 8%);
     width: clamp(60%, 37vw, 37%);
   }
